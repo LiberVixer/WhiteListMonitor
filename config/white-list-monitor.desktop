@@ -2,10 +2,13 @@
 Type=Application
 Version=1.0
 Name=White List Monitor
+Name[ru]=White List Monitor
 GenericName=Network whitelist monitor
+GenericName[ru]=Монитор белых списков сети
 Comment=Monitor whitelist mode and VPN candidates
-Exec=/home/redmin/WLM/.venv/bin/python -m white_list_monitor.main
-Path=/home/redmin/WLM
+Comment[ru]=Монитор режима белых списков и VPN-кандидатов
+Exec=white-list-monitor
+TryExec=white-list-monitor
 Icon=white-list-monitor
 Terminal=false
 Categories=Network;

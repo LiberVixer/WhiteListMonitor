@@ -18,6 +18,7 @@ from PyQt6.QtWidgets import (
     QWidget,
 )
 
+from . import __version__
 from .database import Database
 from .network_check import CheckResult, detect_network_status
 from .settings_dialog import SettingsDialog
@@ -118,7 +119,7 @@ class MainWindow(QMainWindow):
 
         self.last_tray_trigger_at = 0.0
 
-        self.setWindowTitle("White List Monitor")
+        self.setWindowTitle(f"White List Monitor {__version__}")
         self.resize(850, 560)
 
         self.status_label = QLabel("Текущий статус: Неизвестно")

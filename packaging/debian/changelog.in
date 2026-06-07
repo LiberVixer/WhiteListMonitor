@@ -1,0 +1,7 @@
+white-list-monitor (@VERSION@) stable; urgency=medium
+
+  * Alpha release.
+  * Added Linux Mint friendly DEB packaging.
+  * Added desktop launcher, scalable icon, and system command.
+
+ -- LiberVixer <sophia.wilson.99@outlook.com>  Sun, 07 Jun 2026 07:00:00 +0300

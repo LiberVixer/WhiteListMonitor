@@ -1,0 +1,12 @@
+Package: white-list-monitor
+Version: @VERSION@
+Section: net
+Priority: optional
+Architecture: @ARCH@
+Depends: python3 (>= 3.10), python3-pyqt6, python3-requests, python3-apscheduler, iputils-ping
+Maintainer: LiberVixer <sophia.wilson.99@outlook.com>
+Homepage: https://github.com/LiberVixer/WhiteListMonitor
+Description: GUI monitor for whitelist-mode VPN candidate analysis
+ White List Monitor is a Linux desktop utility for monitoring restricted
+ network modes, collecting VPN subscription candidates, rating them for
+ whitelist-like environments, and exporting ready-to-use top server lists.
