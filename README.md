@@ -27,7 +27,7 @@ Download the latest alpha `.deb` from GitHub Releases:
 
 ```bash
 sudo apt update
-sudo apt install ./white-list-monitor_0.1.0~alpha1_all.deb
+sudo apt install ./white-list-monitor_0.1.0.alpha1_all.deb
 ```
 
 Then start it from the Linux Mint menu or run:
@@ -48,7 +48,7 @@ The `.deb` package depends on:
 - `python3-apscheduler`
 - `iputils-ping`
 
-`apt install ./white-list-monitor_0.1.0~alpha1_all.deb` should install them automatically when the repositories are enabled.
+`apt install ./white-list-monitor_0.1.0.alpha1_all.deb` should install them automatically when the repositories are enabled.
 
 ## Data Location
 
@@ -88,7 +88,7 @@ python -m white_list_monitor.main
 The package will be created in:
 
 ```text
-dist/white-list-monitor_0.1.0~alpha1_all.deb
+dist/white-list-monitor_0.1.0.alpha1_all.deb
 ```
 
 ## Development Checks
@@ -132,7 +132,7 @@ MIT License. See [LICENSE](LICENSE).
 
 ```bash
 sudo apt update
-sudo apt install ./white-list-monitor_0.1.0~alpha1_all.deb
+sudo apt install ./white-list-monitor_0.1.0.alpha1_all.deb
 ```
 
 После установки запусти программу из меню Linux Mint или командой:
@@ -181,7 +181,7 @@ python -m white_list_monitor.main
 Готовый пакет появится здесь:
 
 ```text
-dist/white-list-monitor_0.1.0~alpha1_all.deb
+dist/white-list-monitor_0.1.0.alpha1_all.deb
 ```
 
 ## Проверка разработки

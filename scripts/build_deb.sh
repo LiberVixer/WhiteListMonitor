@@ -4,6 +4,7 @@ set -euo pipefail
 PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 PACKAGE_NAME="white-list-monitor"
 VERSION="${WLM_VERSION:-0.1.0~alpha1}"
+FILE_VERSION="${WLM_FILE_VERSION:-$(printf '%s' "$VERSION" | tr '~' '.')}"
 ARCH="${WLM_ARCH:-all}"
 
 BUILD_ROOT="$PROJECT_ROOT/build/deb"
@@ -53,7 +54,7 @@ install -m 0644 "$PROJECT_ROOT/scripts/sync_sni_domain_pool.py" "$PKG_ROOT/usr/s
 find "$PKG_ROOT" -type d -exec chmod 0755 {} +
 find "$PKG_ROOT" -type f -exec chmod go-w {} +
 
-OUTPUT="$DIST_DIR/${PACKAGE_NAME}_${VERSION}_${ARCH}.deb"
+OUTPUT="$DIST_DIR/${PACKAGE_NAME}_${FILE_VERSION}_${ARCH}.deb"
 dpkg-deb --build --root-owner-group "$PKG_ROOT" "$OUTPUT"
 
 echo "$OUTPUT"
