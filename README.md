@@ -1,4 +1,5 @@
 # White List Monitor
+<img width="1640" height="946" alt="изображение" src="https://github.com/user-attachments/assets/b3d79728-9076-4fff-b6c5-3c3c0a61db19" />
 
 **White List Monitor** is a Linux desktop utility for monitoring restricted network modes and preparing VPN subscription candidates for whitelist-like environments.
 
