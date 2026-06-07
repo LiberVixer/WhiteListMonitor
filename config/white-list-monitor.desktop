@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=White List Monitor
+GenericName=Network whitelist monitor
+Comment=Monitor whitelist mode and VPN candidates
+Exec=/home/redmin/WLM/.venv/bin/python -m white_list_monitor.main
+Path=/home/redmin/WLM
+Icon=white-list-monitor
+Terminal=false
+Categories=Network;
+Keywords=VPN;Whitelist;Network;Internet;Russia;
+StartupNotify=true
